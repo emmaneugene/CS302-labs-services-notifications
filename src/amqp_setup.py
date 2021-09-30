@@ -1,7 +1,8 @@
-import pika
-import time
-import ssl
 from os import environ
+import ssl
+import time
+
+import pika
 
 hostname = environ.get('rabbitmq_host')
 port = environ.get('rabbitmq_port')

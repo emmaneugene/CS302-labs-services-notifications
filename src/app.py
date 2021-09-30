@@ -1,8 +1,9 @@
 import json
-import mysql.connector
-import amqp_setup
 from os import environ
 from urllib.parse import urlparse
+
+import amqp_setup
+import mysql.connector
 
 
 db_url = urlparse(environ.get('db_conn'))
